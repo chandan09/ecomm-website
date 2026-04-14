@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AURA | Premium Fashion Apparel</title>
-  <meta name="description" content="Discover premium, elegant, and modern fashion apparel for men and women. Shop the latest high-end trends at AURA.">
+  <title>La Benediction | Premium Fashion Apparel</title>
+  <meta name="description"
+    content="Discover premium, elegant, and modern fashion apparel for women. Shop the latest high-end trends at La Benediction.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="announcement-bar">
-      <span>PREMIUM OFFER:</span> Get 20% off your first order. Use code <strong>AURA20</strong> at checkout.
+    <div class="announcement-bar" style="background-color: #d4af37; color: white; padding: 10px 0; font-size: 0.85rem; font-weight: 500; text-align: center;">
+      <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+         <span style="letter-spacing: 1px;">BEST PRICE EVER - NEW USERS GET 20% OFF - CODE: <strong>FIRST20</strong></span>
+         <div class="timer" style="display: flex; gap: 8px; align-items: center; border-left: 1px solid rgba(255,255,255,0.3); padding-left: 15px; font-family: monospace; font-weight: bold;">
+            <span id="hrs">07</span>:<span id="mins">06</span>:<span id="secs">30</span>
+         </div>
+      </div>
     </div>
+
     <div class="container nav-container">
       <button class="mobile-menu-btn" aria-label="Menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
       </button>
 
-      <a href="#/" class="logo">AURA</a>
+      <a href="#/" class="logo" style="display: flex; align-items: center;"><img src="assets/images/lb_logo_gold_white.png" alt="La Benediction" style="height: 75px; width: auto; object-fit: contain;"></a>
 
       <nav class="nav-links">
         <a href="#/" class="nav-link">Home</a>
-        <a href="#/men" class="nav-link">Men</a>
         <a href="#/women" class="nav-link">Women</a>
       </nav>
 
       <div class="nav-icons">
         <button class="nav-icon open-user" aria-label="User Account">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
         </button>
         <button class="nav-icon open-cart" aria-label="Shopping Cart">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
           <span class="cart-count">0</span>
         </button>
       </div>
@@ -45,44 +67,77 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-column">
-          <h4>AURA</h4>
-          <p style="color: #ccc; font-size: 0.9rem; margin-bottom: 1rem;">Premium fashion for the modern era. Curated collections for men and women.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-            <a href="#" class="social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
-          </div>
+      <!-- Trust Icons Bar -->
+      <div style="display: flex; justify-content: space-around; padding: 3rem 0; border-bottom: 1px solid #f0f0f0; margin-bottom: 4rem; text-align: center; flex-wrap: wrap; gap: 2rem;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.5"><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+           <div style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Global Shipping</div>
         </div>
-        <div class="footer-column">
-          <h4>Shop</h4>
-          <div class="footer-links">
-            <a href="#/men" class="footer-link">Men's Collection</a>
-            <a href="#/women" class="footer-link">Women's Collection</a>
-            <a href="#/" class="footer-link">New Arrivals</a>
-          </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+           <div style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Authentic Origin</div>
         </div>
-        <div class="footer-column">
-          <h4>Support</h4>
-          <div class="footer-links">
-            <a href="#/help" class="footer-link">Help Center</a>
-            <a href="#" class="footer-link">Order Tracking</a>
-            <a href="#/returns" class="footer-link">Returns & Exchanges</a>
-          </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+           <div style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Secure Checkout</div>
         </div>
-        <div class="footer-column">
-          <h4>Company</h4>
-          <div class="footer-links">
-            <a href="#/about" class="footer-link">About Us</a>
-            <a href="#/privacy" class="footer-link">Privacy Policy</a>
-            <a href="#/terms" class="footer-link">Terms of Service</a>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+           <div style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">24/7 Support</div>
+        </div>
+      </div>
+
+      <!-- Main Footer Links Panel -->
+      <div style="background: rgba(255,255,255,0.92); padding: 4rem 3rem; border-radius: 12px; backdrop-filter: blur(5px); box-shadow: 0 10px 40px rgba(0,0,0,0.04); position: relative; z-index: 10; margin-bottom: 2rem;">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="assets/images/lb_logo_gold_white.png" alt="La Benediction" style="height: 60px; margin-bottom: 1.5rem;">
+            <p style="color: #666; font-size: 0.9rem; max-width: 320px; line-height: 1.8;">
+              Rooted in Jharkhand's artistic heritage, La Benediction elevates premium womenswear with exquisite craftsmanship and modern elegance.
+            </p>
+            <div class="social-links" style="margin-top: 2.5rem;">
+              <a href="#" class="social-link" style="color: #1a1a1a;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              <a href="#" class="social-link" style="color: #1a1a1a; margin-left: 15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+              <a href="#" class="social-link" style="color: #1a1a1a; margin-left: 15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            </div>
+          </div>
+  
+          <div class="footer-column">
+            <h4>Collections</h4>
+            <div class="footer-links">
+              <a href="#/women" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">New Arrivals</a>
+              <a href="#/women" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">Blouses</a>
+              <a href="#/women" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">Bestsellers</a>
+              <a href="#/women" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">The Collection</a>
+            </div>
+          </div>
+  
+          <div class="footer-column">
+            <h4>Information</h4>
+            <div class="footer-links">
+              <a href="#/shipping" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">Shipping Policy</a>
+              <a href="#/privacy" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">Privacy Policy</a>
+              <a href="#/about" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">About Us</a>
+              <a href="#/terms" class="footer-link" style="color: #666; margin-bottom: 10px; display: block;">Terms of Services</a>
+            </div>
+          </div>
+  
+          <div class="footer-column">
+            <h4>Join the Edit</h4>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.5rem;">Be the first to know about new collections and exclusive previews.</p>
+            <form class="newsletter-form">
+              <div style="border-bottom: 1px solid #eee; margin-bottom: 1rem;">
+                <input type="email" placeholder="email@example.com" class="newsletter-input" style="border: none; padding: 0.8rem 0; width: 100%; outline: none; background: transparent;" required>
+              </div>
+              <button type="submit" class="newsletter-btn" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; width: 100%; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: background 0.3s; height: auto;">Join Now</button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        &copy; 2026 AURA Fashion. All rights reserved. Premium dummy website.
-      </div>
+
+    </div>
+    <div class="footer-bottom" style="text-align: center; padding: 1.5rem 0; font-size: 0.75rem; color: #ffffff; position: relative; z-index: 10; background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(5px); width: 100%; border-top: 1px solid rgba(255,255,255,0.1);">
+      &copy; 2026 La Benediction Fashion Pvt. Ltd. All Rights Reserved.
     </div>
   </footer>
 
@@ -99,9 +154,10 @@
       <div class="cart-footer">
         <div class="cart-total">
           <span>Total</span>
-          <span id="cartTotal">$0.00</span>
+          <span id="cartTotal">₹0.00</span>
         </div>
-        <a href="#/checkout" class="btn btn-primary btn-full close-cart text-center" style="padding: 1rem;">Checkout securely</a>
+        <a href="#/checkout" class="btn btn-primary btn-full close-cart text-center" style="padding: 1rem;">Checkout
+          securely</a>
       </div>
     </aside>
   </div>
@@ -110,23 +166,30 @@
   <div class="user-overlay" id="userOverlay">
     <div class="user-modal">
       <button class="close-user" aria-label="Close">&times;</button>
-      <h2 class="mb-3">Welcome Back</h2>
-      <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Log in to access your orders and saved items.</p>
-      
-      <form id="userForm">
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" class="form-control" required placeholder="name@example.com">
+      <div id="authContent">
+        <h2 class="mb-3" id="authTitle">Welcome Back</h2>
+        <p style="color: var(--color-text-secondary); margin-bottom: 2rem;" id="authSubtitle">Log in to access your orders and saved items.</p>
+
+        <form id="userForm">
+          <div class="form-group" id="nameGroup" style="display: none; margin-bottom: 1.2rem;">
+            <label style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #666;">Full Name</label>
+            <input type="text" id="signupName" class="form-control" placeholder="Chandan Kumar" style="border: none; border-bottom: 1px solid #ddd; padding: 0.8rem 0; background: transparent; border-radius: 0;">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #666;">Email Address</label>
+            <input type="email" id="authEmail" class="form-control" required placeholder="chandan@example.com" style="border: none; border-bottom: 1px solid #ddd; padding: 0.8rem 0; background: transparent; border-radius: 0;">
+          </div>
+          <div class="form-group" style="margin-bottom: 2rem;">
+            <label style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #666;">Password</label>
+            <input type="password" class="form-control" required placeholder="••••••••" style="border: none; border-bottom: 1px solid #ddd; padding: 0.8rem 0; background: transparent; border-radius: 0;">
+          </div>
+          <button type="submit" id="authSubmitBtn" class="btn btn-primary btn-full" style="padding: 1rem; background: #1a1a1a; color: white; border: none; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Sign In</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <p style="font-size: 0.85rem; color: #666;" id="authToggleText">Don't have an account? <a href="javascript:void(0)" id="toggleAuth"
+              style="color: var(--color-accent); font-weight: 600; text-decoration: underline; margin-left: 5px;">Sign up</a></p>
         </div>
-        <div class="form-group">
-          <label>Password</label>
-          <input type="password" class="form-control" required placeholder="Min. 8 characters">
-        </div>
-        <button type="submit" class="btn btn-primary btn-full mt-2" style="padding: 0.9rem;">Sign In</button>
-      </form>
-      
-      <div class="text-center mt-3">
-        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Don't have an account? <a href="#" style="color: var(--color-accent); font-weight: 500; text-decoration: underline;">Sign up</a></p>
       </div>
     </div>
   </div>
@@ -135,7 +198,32 @@
   <div class="toast" id="toast">Added to cart!</div>
 
   <!-- Scripts -->
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=1776163118962"></script>
+  <script>
+    function startTimer() {
+      let h = 7, m = 6, s = 30;
+      const hEl = document.getElementById('hrs');
+      const mEl = document.getElementById('mins');
+      const sEl = document.getElementById('secs');
+      
+      setInterval(() => {
+        if (s > 0) s--;
+        else {
+          s = 59;
+          if (m > 0) m--;
+          else {
+            m = 59;
+            if (h > 0) h--;
+          }
+        }
+        if(hEl) hEl.textContent = String(h).padStart(2, '0');
+        if(mEl) mEl.textContent = String(m).padStart(2, '0');
+        if(sEl) sEl.textContent = String(s).padStart(2, '0');
+      }, 1000);
+    }
+    window.addEventListener('load', startTimer);
+  </script>
 
 </body>
+
 </html>
