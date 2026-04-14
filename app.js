@@ -20,22 +20,9 @@ class App {
     this.wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
     
     this.init();
-    this.initMobileMenu();
   }
 
-  initMobileMenu() {
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    if (menuBtn && navLinks) {
-       menuBtn.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-       });
-       // Close menu when clicking a link
-       navLinks.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => navLinks.classList.remove('active'));
-       });
-    }
-  }
+
 
   init() {
     // Event Listeners for Nav
@@ -47,6 +34,10 @@ class App {
     });
     document.querySelectorAll('.close-cart').forEach(btn => {
       btn.addEventListener('click', () => this.toggleCart(false));
+    });
+
+    document.querySelectorAll('.close-user').forEach(btn => {
+      btn.addEventListener('click', () => this.toggleUser(false));
     });
 
     // User Events
